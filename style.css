@@ -1,0 +1,288 @@
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ওপরের নীল হেডার অংশ */
+.top-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 10px 15px 10px;
+}
+
+.logo-container {
+    margin-bottom: 5px;
+}
+
+.logo-img {
+    height: 60px;
+    
+}
+
+.top-header h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+/* Navbar */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 20px 40px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-img-container {
+    margin-bottom: 12px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.my-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 4px;
+}
+
+.my-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.hero-desc {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Hire Me Button */
+.hire-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 22px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hire-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Other Sections */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.card {
+    background: white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left;
+    font-size: 14px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.bg-light {
+    background-color: #eef2f7;
+}
+
+/* Skills Cards Design */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-badge {
+    padding: 3px 6px;
+    font-size: 11px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+.html-badge { background-color: #e34f26; }
+.css-badge { background-color: #1572b6; }
+.bs-badge { background-color: #7952b3; }
+.js-badge { background-color: #f7df1e; color: #000; }
+.git-badge { background-color: #f05032; }
+.comm-badge { background-color: #007bff; }
+
+.html-skill { border-top: 4px solid #e34f26; }
+.css-skill { border-top: 4px solid #1572b6; }
+.bootstrap-skill { border-top: 4px solid #7952b3; }
+.js-skill { border-top: 4px solid #f7df1e; }
+.git-skill { border-top: 4px solid #f05032; }
+.comm-skill { border-top: 4px solid #007bff; }
+
+/* Projects Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left;
+    border-left: 4px solid #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    color: #007bff;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Project Links Buttons Style */
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-demo, .btn-code {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-demo {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-demo:hover {
+    background-color: #0056b3;
+}
+
+.btn-code {
+    background-color: #24292e; /* গিটহাবের থিম কালার */
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-code:hover {
+    background-color: #1b1f23;
+}
+
+.github-icon {
+    font-size: 13px;
+}
+
+/* Contact Card */
+.contact-card {
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .navbar a {
+        display: inline-block;
+        margin: 4px 8px;
+        font-size: 14px;
+    }
+}
